@@ -17,5 +17,5 @@ test('Verfiy /inventory.html , after the reloading of the page', async ({ page }
 
     await page.reload();
     
-    await expect(page).toHaveURL('/.*inventory.html/');
+    await expect(page).toHaveURL(/.*inventory.html/);
 });
